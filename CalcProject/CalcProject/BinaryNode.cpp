@@ -1,13 +1,15 @@
 #include "BinaryNode.h"
 
-//BinaryNode::BinaryNode(Node* left,Node* right):left_(left),right_(right)
-//{
-//
-//}
-
 BinaryNode::~BinaryNode()
 {
-
+	if (left_)
+	{
+		delete left_;
+	}
+	if(right_)
+	{
+		delete right_;
+	}
 }
 
 

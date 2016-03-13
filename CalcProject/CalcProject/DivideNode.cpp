@@ -1,11 +1,12 @@
 #include "DivideNode.h"
 
-
-DivideNode::~DivideNode()
-{
-}
-
 double DivideNode::Calc()
 {
-	return left_->Calc()/right_->Calc();
+	if (right_->Calc()!=0.0)
+	{
+		return left_->Calc()/right_->Calc();
+	}else
+	{
+		return 0.0;
+	}
 }

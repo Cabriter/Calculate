@@ -1,11 +1,6 @@
 #include "UnaryNode.h"
 
-
-UnaryNode::UnaryNode(void)
+UnaryNode::~UnaryNode()
 {
-}
-
-
-UnaryNode::~UnaryNode(void)
-{
+	delete child_;
 }

@@ -1,27 +1,24 @@
-﻿生成启动时间为 2016/1/24 15:50:21。
-     1>项目“C:\Users\Cabrite\Desktop\CalcProject\CalcProject\CalcProject.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2016/3/13 23:47:05。
+     1>项目“C:\GitBash\CalcPro\Calculate\CalcProject\CalcProject\CalcProject.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CalcProjectTest.cpp DivideNode.cpp MultiplyNode.cpp SubNode.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CalcProjectTest.cpp
          CalcProjectTest.cpp
-         正在生成代码...
-         正在跳过...(未检测到相关更改)
-         SubNode.cpp
-         MultiplyNode.cpp
-         DivideNode.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Cabrite\Desktop\CalcProject\Debug\CalcProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Cabrite\Desktop\CalcProject\Debug\CalcProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Cabrite\Desktop\CalcProject\Debug\CalcProject.lib" /MACHINE:X86 Debug\AddNode.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.lib" /MACHINE:X86 Debug\AddNode.obj
          Debug\BinaryNode.obj
          Debug\CalcProjectTest.obj
          Debug\DivideNode.obj
          Debug\MultiplyNode.obj
          Debug\Node.obj
          Debug\NumberNode.obj
+         Debug\Parser.obj
+         Debug\Scanner.obj
          Debug\SubNode.obj
          Debug\UMinusNode.obj
          Debug\UnaryNode.obj
-         CalcProject.vcxproj -> C:\Users\Cabrite\Desktop\CalcProject\Debug\CalcProject.exe
-     1>已完成生成项目“C:\Users\Cabrite\Desktop\CalcProject\CalcProject\CalcProject.vcxproj”(Build 个目标)的操作。
+         CalcProject.vcxproj -> C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.exe
+     1>已完成生成项目“C:\GitBash\CalcPro\Calculate\CalcProject\CalcProject\CalcProject.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.15
+已用时间 00:00:00.78

@@ -1,11 +1,6 @@
 #include "UMinusNode.h"
 
-
-UMinusNode::UMinusNode(void)
+double UMinusNode::Calc()
 {
-}
-
-
-UMinusNode::~UMinusNode(void)
-{
+	return -(child_->Calc());
 }

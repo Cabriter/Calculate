@@ -5,10 +5,20 @@
 #include "SubNode.h"
 #include "MultiplyNode.h"
 #include "DivideNode.h"
+#include "Scanner.h"
+#include "Parser.h"
 
 int main()
 {
-	NumberNode left(100);
+	Scanner scanner("-222+22-(22-33)*12");
+	Parser parser(scanner);
+	parser.Parse();
+	if(parser.Status() == STATUS_OK)
+	{
+		std::cout<< parser.Calculate()<<std::endl;
+	}
+#pragma region Test1
+	/*NumberNode left(100);
 	NumberNode right(20);
 	AddNode add_node(&left,&right);
 	std::cout << add_node.Calc() << std::endl;
@@ -17,7 +27,7 @@ int main()
 	MultiplyNode mu_node(&left,&right);
 	std::cout << mu_node.Calc() << std::endl;
 	DivideNode div_node(&left,&right);
-	std::cout << div_node.Calc() << std::endl;
-
+	std::cout << div_node.Calc() << std::endl;*/
+#pragma endregion
 	return 0;
 }

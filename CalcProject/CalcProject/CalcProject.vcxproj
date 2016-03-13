@@ -68,6 +68,8 @@
     <ClInclude Include="MultiplyNode.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="NumberNode.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Scanner.h" />
     <ClInclude Include="SubNode.h" />
     <ClInclude Include="UMinusNode.h" />
     <ClInclude Include="UnaryNode.h" />
@@ -80,6 +82,8 @@
     <ClCompile Include="MultiplyNode.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="NumberNode.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Scanner.cpp" />
     <ClCompile Include="SubNode.cpp" />
     <ClCompile Include="UMinusNode.cpp" />
     <ClCompile Include="UnaryNode.cpp" />
