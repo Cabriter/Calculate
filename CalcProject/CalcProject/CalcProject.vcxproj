@@ -65,12 +65,15 @@
     <ClInclude Include="AddNode.h" />
     <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="DivideNode.h" />
+    <ClInclude Include="MultipleNode.h" />
     <ClInclude Include="MultiplyNode.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="NumberNode.h" />
     <ClInclude Include="Parser.h" />
+    <ClInclude Include="ProductNode.h" />
     <ClInclude Include="Scanner.h" />
     <ClInclude Include="SubNode.h" />
+    <ClInclude Include="SumNode.h" />
     <ClInclude Include="UMinusNode.h" />
     <ClInclude Include="UnaryNode.h" />
   </ItemGroup>
@@ -79,12 +82,15 @@
     <ClCompile Include="BinaryNode.cpp" />
     <ClCompile Include="CalcProjectTest.cpp" />
     <ClCompile Include="DivideNode.cpp" />
+    <ClCompile Include="MultipleNode.cpp" />
     <ClCompile Include="MultiplyNode.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="NumberNode.cpp" />
     <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="ProductNode.cpp" />
     <ClCompile Include="Scanner.cpp" />
     <ClCompile Include="SubNode.cpp" />
+    <ClCompile Include="SumNode.cpp" />
     <ClCompile Include="UMinusNode.cpp" />
     <ClCompile Include="UnaryNode.cpp" />
   </ItemGroup>
