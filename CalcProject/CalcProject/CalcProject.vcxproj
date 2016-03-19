@@ -63,6 +63,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AddNode.h" />
+    <ClInclude Include="AssignNode.h" />
     <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="DivideNode.h" />
     <ClInclude Include="MultipleNode.h" />
@@ -72,13 +73,17 @@
     <ClInclude Include="Parser.h" />
     <ClInclude Include="ProductNode.h" />
     <ClInclude Include="Scanner.h" />
+    <ClInclude Include="Storage.h" />
     <ClInclude Include="SubNode.h" />
     <ClInclude Include="SumNode.h" />
+    <ClInclude Include="SymbolTable.h" />
     <ClInclude Include="UMinusNode.h" />
     <ClInclude Include="UnaryNode.h" />
+    <ClInclude Include="Variable.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddNode.cpp" />
+    <ClCompile Include="AssignNode.cpp" />
     <ClCompile Include="BinaryNode.cpp" />
     <ClCompile Include="CalcProjectTest.cpp" />
     <ClCompile Include="DivideNode.cpp" />
@@ -89,10 +94,13 @@
     <ClCompile Include="Parser.cpp" />
     <ClCompile Include="ProductNode.cpp" />
     <ClCompile Include="Scanner.cpp" />
+    <ClCompile Include="Storage.cpp" />
     <ClCompile Include="SubNode.cpp" />
     <ClCompile Include="SumNode.cpp" />
+    <ClCompile Include="SymbolTable.cpp" />
     <ClCompile Include="UMinusNode.cpp" />
     <ClCompile Include="UnaryNode.cpp" />
+    <ClCompile Include="Variable.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

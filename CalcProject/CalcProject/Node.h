@@ -7,6 +7,8 @@ public:
 	Node();
 	~Node();
 	virtual double Calc();
+	virtual bool IsLValue();
+	virtual void Assign(double value);
 };
 
 #endif

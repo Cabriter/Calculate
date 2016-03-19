@@ -1,29 +1,67 @@
-﻿生成启动时间为 2016/3/17 22:25:40。
-     1>项目“C:\GitBash\CalcPro\Calculate\CalcProject\CalcProject\CalcProject.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2016/3/18 22:52:11。
+     1>项目“E:\GitBash\CalculatePro\Calculate\CalcProject\CalcProject\CalcProject.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CalcProjectTest.cpp ProductNode.cpp
-         ProductNode.cpp
-         CalcProjectTest.cpp
-         正在生成代码...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.lib" /MACHINE:X86 Debug\AddNode.obj
-         Debug\BinaryNode.obj
-         Debug\CalcProjectTest.obj
-         Debug\DivideNode.obj
-         Debug\MultipleNode.obj
-         Debug\MultiplyNode.obj
-         Debug\Node.obj
-         Debug\NumberNode.obj
-         Debug\Parser.obj
-         Debug\ProductNode.obj
-         Debug\Scanner.obj
-         Debug\SubNode.obj
-         Debug\SumNode.obj
-         Debug\UMinusNode.obj
-         Debug\UnaryNode.obj
-         CalcProject.vcxproj -> C:\GitBash\CalcPro\Calculate\CalcProject\Debug\CalcProject.exe
-     1>已完成生成项目“C:\GitBash\CalcPro\Calculate\CalcProject\CalcProject\CalcProject.vcxproj”(Build 个目标)的操作。
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt SymbolTable.cpp
+         SymbolTable.cpp
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(180): error C2784: “bool std::operator <(const std::_Tree<_Traits> &,const std::_Tree<_Traits> &)”: 未能从“const std::string”为“const std::_Tree<_Traits> &”推导 模板 参数
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xtree(2245) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(179): 编译类 模板 成员函数“bool std::less<_Ty>::operator ()(_Ty &,_Ty &) const”时
+                 with
+                 [
+                     _Ty=const std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\map(194): 参见对正在编译的函数 模板 实例化“bool std::less<_Ty>::operator ()(_Ty &,_Ty &) const”的引用
+                 with
+                 [
+                     _Ty=const std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\type_traits(743): 参见对正在编译的类 模板 实例化“std::less<_Ty>”的引用
+                 with
+                 [
+                     _Ty=const std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xtree(1028): 参见对正在编译的类 模板 实例化“std::is_empty<_Ty>”的引用
+                 with
+                 [
+                     _Ty=std::less<const std::string>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\map(67): 参见对正在编译的类 模板 实例化“std::_Tree<_Traits>”的引用
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<const std::string,unsigned int,std::less<const std::string>,std::allocator<std::pair<const std::string,unsigned int>>,false>
+                 ]
+                 e:\gitbash\calculatepro\calculate\calcproject\calcproject\symboltable.h(16): 参见对正在编译的类 模板 实例化“std::map<_Kty,_Ty>”的引用
+                 with
+                 [
+                     _Kty=const std::string,
+                     _Ty=unsigned int
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xtree(2245) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xtree(2245) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xtree(2245) : 参见“std::operator <”的声明
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(180): error C2784: “bool std::operator <(const std::move_iterator<_RanIt> &,const std::move_iterator<_RanIt2> &)”: 未能从“const std::string”为“const std::move_iterator<_RanIt> &”推导 模板 参数
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1983) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1983) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1983) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1983) : 参见“std::operator <”的声明
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(180): error C2784: “bool std::operator <(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt2> &)”: 未能从“const std::string”为“const std::reverse_iterator<_RanIt> &”推导 模板 参数
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1259) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1259) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1259) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1259) : 参见“std::operator <”的声明
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(180): error C2784: “bool std::operator <(const std::_Revranit<_RanIt,_Base> &,const std::_Revranit<_RanIt2,_Base2> &)”: 未能从“const std::string”为“const std::_Revranit<_RanIt,_Base> &”推导 模板 参数
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1075) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1075) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1075) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(1075) : 参见“std::operator <”的声明
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(180): error C2784: “bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Ty1,_Ty2> &)”: 未能从“const std::string”为“const std::pair<_Ty1,_Ty2> &”推导 模板 参数
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\utility(232) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\utility(232) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\utility(232) : 参见“std::operator <”的声明
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\utility(232) : 参见“std::operator <”的声明
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstddef(180): error C2676: 二进制“<”:“const std::string”不定义该运算符或到预定义运算符可接收的类型的转换
+     1>已完成生成项目“E:\GitBash\CalculatePro\Calculate\CalcProject\CalcProject\CalcProject.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:01.13
+已用时间 00:00:00.21

@@ -57,6 +57,18 @@
     <ClInclude Include="ProductNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SymbolTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Variable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AssignNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NumberNode.cpp">
@@ -102,6 +114,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ProductNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Storage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Variable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AssignNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
