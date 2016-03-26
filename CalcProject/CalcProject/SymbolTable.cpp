@@ -39,6 +39,7 @@ std::string SymbolTable::GetSymbolName(unsigned int id) const
 			return iter.first;
 		}
 	}
+	return "";
 }
 
 void SymbolTable::Clear()

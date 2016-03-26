@@ -3,6 +3,8 @@
 
 class Scanner;//前置声明,提高编译效率
 class Node;
+class SymbolTable;
+class Storage;
 
 enum EStatus
 {
@@ -13,7 +15,7 @@ enum EStatus
 class Parser
 {
 public:
-	Parser(Scanner& scanner):scanner_(scanner)
+	Parser(Scanner& scanner,SymbolTable&symbolTable,Storage&storage):scanner_(scanner),symbolTable_(symbolTable),storage_(storage)
 	{
 		tree_ = nullptr;
 	}
@@ -28,5 +30,7 @@ private:
 	Node* Term();
 	Node* Factor();
 	EStatus status_;
+	SymbolTable &symbolTable_;
+	Storage &storage_;
 };
 #endif // PARSER_H

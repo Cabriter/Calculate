@@ -2,7 +2,7 @@
 #define SYMBOLTABLE_H
 
 #include <map>
-
+#include <string>
 //·ûºÅ±í
 class SymbolTable
 {

@@ -23,6 +23,11 @@ double Scanner::Number() const
 	return number_;
 }
 
+std::string Scanner::Symbol() const
+{
+	return symbol_;
+}
+
 void Scanner::SkipWhite()
 {
 	while (isspace(buf_[cur_pos_]))
@@ -50,6 +55,10 @@ void Scanner::Accept()
 		break;
 	case  '/':
 		token_ = TOKEN_DIVIDE;
+		++cur_pos_;
+		break;
+	case '=':
+		token_ = TOKEN_ASSIGN;
 		++cur_pos_;
 		break;
 	case  '(':
@@ -83,7 +92,21 @@ void Scanner::Accept()
 		token_ = TOKEN_END;
 		break;
 	default:
-		token_ = TOKEN_ERROR;
+		if (isalpha(buf_[cur_pos_])||buf_[cur_pos_] == '_')
+		{
+			token_ = TOKEN_IDENTIFIER;
+			char temp = buf_[cur_pos_];
+			symbol_.erase();
+			do 
+			{
+				symbol_+=temp;
+				cur_pos_++;
+				temp = buf_[cur_pos_];
+			} while (isalnum(temp)||temp == '_');
+		}else
+		{
+			token_ = TOKEN_ERROR;
+		}
 	}
 }
 

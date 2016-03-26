@@ -7,16 +7,29 @@
 #include "DivideNode.h"
 #include "Scanner.h"
 #include "Parser.h"
+#include "SymbolTable.h"
+#include "Storage.h"
 
 int main()
 {
-	Scanner scanner("-222+22-(22-33)*12");
-	Parser parser(scanner);
-	parser.Parse();
-	if(parser.Status() == STATUS_OK)
+	SymbolTable symbolTable;
+	Storage storage(symbolTable);
+	EStatus status = STATUS_OK;
+	do 
 	{
-		std::cout<< parser.Calculate()<<std::endl;
-	}
+		std::cout<<">";
+		std::string input;
+		std::cin>>input;
+		Scanner scanner(input);
+		Parser parser(scanner,symbolTable,storage);
+		parser.Parse();
+		status = parser.Status();
+		if (status == STATUS_OK)
+		{
+			std::cout<< parser.Calculate()<<std::endl;
+		}
+	} while (status == STATUS_OK);
+
 #pragma region Test1
 	/*NumberNode left(100);
 	NumberNode right(20);

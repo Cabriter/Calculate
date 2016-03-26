@@ -11,6 +11,8 @@ enum EToken
 	TOKEN_DIVIDE,
 	TOKEN_LPARENTHESIS,
 	TOKEN_RPARENTHESIS,
+	TOKEN_IDENTIFIER,//±êÊ¶·û
+	TOKEN_ASSIGN,//µÈºÅ
 	TOKEN_END,
 	TOKEN_ERROR
 };
@@ -23,6 +25,7 @@ public:
 	~Scanner(void);
 	EToken Token() const;
 	double Number()const;
+	std::string Symbol() const;
 	void Accept();
 private:
 	void SkipWhite();
@@ -30,5 +33,6 @@ private:
 	unsigned int cur_pos_;
 	EToken token_;
 	double number_;
+	std::string symbol_;
 };
 #endif

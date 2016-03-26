@@ -11,6 +11,10 @@
 #include "MultipleNode.h"
 #include "SumNode.h"
 #include "ProductNode.h"
+#include "AssignNode.h"
+#include "SymbolTable.h"
+#include "Storage.h"
+#include "Variable.h"
 
 Parser::~Parser()
 {
@@ -35,11 +39,9 @@ double Parser::Calculate()
 //表达式
 Node* Parser::Expr()
 {
+	#pragma region 右结合
 	//Node* node_ret = nullptr;
-	Node* node_right = nullptr;
-	Node* node_left = Term();
-	EToken token = scanner_.Token();
-#pragma region 右结合
+	//Node* node_right = nullptr;
 	/*switch (token)
 	{
 	case TOKEN_PLUS:
@@ -57,6 +59,9 @@ Node* Parser::Expr()
 	break;
 	}*/
 #pragma endregion
+	Node* node_left = Term();
+	EToken token = scanner_.Token();
+
 	if (token == TOKEN_PLUS||token == TOKEN_MINUS)
 	{
 		MultipleNode* multipleNode = new SumNode(node_left);
@@ -68,6 +73,18 @@ Node* Parser::Expr()
 			token = scanner_.Token();
 		} while (token == TOKEN_PLUS||token == TOKEN_MINUS);
 		node_left = multipleNode;
+	}else if(token == TOKEN_ASSIGN)
+	{
+		//a = 3; a = b = 3;
+		scanner_.Accept();
+		Node* nextNode = Expr();
+		if (node_left->IsLValue())
+		{
+			node_left = new AssignNode(node_left,nextNode);
+		}else
+		{
+			std::cout<<"无法对右值进行赋值！"<<std::endl;
+		}
 	}
 	return node_left;
 }
@@ -137,6 +154,16 @@ Node* Parser::Factor()
 			node_ret = nullptr;
 			status_ = STATUS_ERROR;
 		}
+		break;
+	case TOKEN_IDENTIFIER:
+		std::string symbol = scanner_.Symbol();
+		unsigned int id = symbolTable_.Find(symbol);
+		scanner_.Accept();//不移位会出现空指针
+		if (id == -1)
+		{
+			id = symbolTable_.Add(symbol);
+		}
+		node_ret = new Variable(id,storage_);
 		break;
 	case TOKEN_ERROR:
 		node_ret = nullptr;
